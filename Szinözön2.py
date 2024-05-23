@@ -6,7 +6,7 @@ pygame.init()
 WIDTH, HEIGHT = 700, 950
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 FPS = pygame.time.Clock()
-BG = pygame.transform.scale(pygame.image.load("placeholder.jpg"), (WIDTH, HEIGHT))
+BG = pygame.transform.scale(pygame.image.load("hatterkep.png"), (WIDTH, HEIGHT))
 FONT = pygame.font.SysFont("comicsans", 30)
 start_time = time.time()
 elapsed_time = 0
