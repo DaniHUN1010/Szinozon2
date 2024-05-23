@@ -3,7 +3,7 @@ import random
 import time
 pygame.font.init()
 pygame.init()
-WIDTH, HEIGHT = 700, 1000
+WIDTH, HEIGHT = 700, 950
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 FPS = pygame.time.Clock()
 BG = pygame.transform.scale(pygame.image.load("placeholder.jpg"), (WIDTH, HEIGHT))
