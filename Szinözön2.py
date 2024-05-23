@@ -3,7 +3,7 @@ import random
 import time
 pygame.font.init()
 pygame.init()
-WIDTH, HEIGHT = 700, 950
+WIDTH, HEIGHT = 700, 850
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 FPS = pygame.time.Clock()
 BG = pygame.transform.scale(pygame.image.load("hatterkep.png"), (WIDTH, HEIGHT))
