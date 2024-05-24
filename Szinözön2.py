@@ -11,6 +11,10 @@ FONT = pygame.font.SysFont("Calibri", 30, bold = True)
 start_time = time.time()
 elapsed_time = 0
 pygame.display.set_caption("Színözön2")
+color = (186, 56, 56)
+rect_1 = (195, 440, 310, 130)  #középső gomb
+rect_2=(195, 270, 310, 130)    #felső gomb
+rect_3=(195, 610, 310, 130)    #alsó gomb
 color = (200, 75, 75)
 rect = (50, 50, 310, 130)
 S_betu = FONT.render("S", 1, (0, 0, 0))
@@ -32,7 +36,9 @@ def draw(elapsed_time):
     WINDOW.blit(Z2_betu, (105, 10))
     WINDOW.blit(Ö2_betu, (122, 9))
     WINDOW.blit(N2_betu, (145, 10))
-    pygame.draw.rect(WINDOW, color, rect)  # Téglalap rajzolása
+    pygame.draw.rect(WINDOW, color, rect_1)  # Téglalap rajzolása
+    pygame.draw.rect(WINDOW, color, rect_2)  # Téglalap rajzolása
+    pygame.draw.rect(WINDOW, color, rect_3)  # Téglalap rajzolása
     pygame.display.update()
     time_text = FONT.render(f"Idő: {round(elapsed_time)}s", 1, "white")
     WINDOW.blit(time_text, (10, 10))
